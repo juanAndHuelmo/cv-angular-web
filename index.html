@@ -3,68 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CV | Tu Nombre</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Juan Huelmo | Frontend Developer</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      AOS.init();
+    });
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans leading-relaxed">
+<body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-white font-sans">
 
-  <div class="max-w-4xl mx-auto p-8 bg-white shadow-lg rounded-xl mt-10">
-    <header class="mb-6">
-      <h1 class="text-4xl font-bold text-indigo-600">Tu Nombre</h1>
-      <p class="text-lg">Desarrollador Frontend especializado en Angular</p>
-      <div class="flex gap-4 mt-2 text-sm text-gray-500">
-        <span>📍 Montevideo, Uruguay</span>
-        <a href="mailto:tu.email@example.com" class="underline">📧 tu.email@example.com</a>
-        <a href="https://linkedin.com/in/tuusuario" class="underline">🔗 LinkedIn</a>
-        <a href="https://github.com/tuusuario" class="underline">🐙 GitHub</a>
-      </div>
-    </header>
-
-    <section class="mb-6">
-      <h2 class="text-2xl font-semibold text-indigo-500">Perfil Profesional</h2>
-      <p>
-        Desarrollador Frontend con X años de experiencia creando interfaces web modernas con Angular, TypeScript y buenas prácticas de desarrollo. Enfocado en rendimiento, accesibilidad y experiencia de usuario. Amante de los desafíos técnicos y el aprendizaje continuo.
-      </p>
-    </section>
-
-    <section class="mb-6">
-      <h2 class="text-2xl font-semibold text-indigo-500">Habilidades Técnicas</h2>
-      <ul class="grid grid-cols-2 gap-2 list-disc list-inside">
-        <li>Angular (vX+)</li>
-        <li>TypeScript, RxJS, NgRx</li>
-        <li>HTML5, CSS3, SCSS</li>
-        <li>REST APIs, JWT</li>
-        <li>Jasmine, Karma, Cypress</li>
-        <li>Git, CI/CD, Scrum</li>
+  <!-- NAV -->
+  <nav class="fixed top-0 left-0 right-0 bg-white dark:bg-gray-800 shadow z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-indigo-600">Juan Huelmo</h1>
+      <ul class="flex space-x-6 text-sm">
+        <li><a href="#about" class="hover:text-indigo-500">Sobre mí</a></li>
+        <li><a href="#skills" class="hover:text-indigo-500">Skills</a></li>
+        <li><a href="#experience" class="hover:text-indigo-500">Experiencia</a></li>
+        <li><a href="#projects" class="hover:text-indigo-500">Proyectos</a></li>
+        <li><a href="#contact" class="hover:text-indigo-500">Contacto</a></li>
       </ul>
-    </section>
+    </div>
+  </nav>
 
-    <section class="mb-6">
-      <h2 class="text-2xl font-semibold text-indigo-500">Experiencia Profesional</h2>
-      <div class="mb-4">
-        <h3 class="text-xl font-bold">Líder de Sistemas – Italmundo</h3>
-        <p class="text-sm text-gray-500">Nov 2023 – Feb 2025</p>
-        <ul class="list-disc list-inside">
-          <li>Desarrollo y mantenimiento de módulos Angular 15+.</li>
-          <li>Integración con APIs, gestión de equipo, planificación técnica.</li>
-        </ul>
-      </div>
-      <!-- Agregar más experiencias aquí -->
-    </section>
-
-    <section class="mb-6">
-      <h2 class="text-2xl font-semibold text-indigo-500">Proyectos</h2>
-      <div class="mb-4">
-        <h3 class="font-bold">Dashboard en tiempo real</h3>
-        <p>SPA en Angular para visualizar métricas usando WebSockets y RxJS.</p>
-        <a href="#" class="text-blue-500 underline text-sm">Ver en GitHub</a>
-      </div>
-    </section>
-
-    <footer class="mt-10 text-sm text-gray-400 text-center">
-      Última actualización: Junio 2025 – Sitio personal creado con 💻 por Tu Nombre
-    </footer>
-  </div>
-
-</body>
-</html>
+  <!-- HERO -->
+  <header class="min-h-screen flex items-center justify-center flex-col text-center pt-32 bg-gradient-to-b from-indigo-100 dark:from-gray-800">
+    <h2 class="text-4xl md:text-6xl font-extrabold mb-4">Juan Huelmo</h2>
+    <p class="text-lg text-gray-600 dark:text-gray-300 max-w-xl">Frontend Developer especializado en Angular y diseño de interfaces atractivas, rápidas y accesibles.</p>
+    <div class="mt-6 flex space-x-4">
+      <a href="https://github.com/juanAndHuelmo" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-full">GitHub</a>
+      <a href="#contact" class="border border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white px-4 py-2 rounded-full">Contáctame</a>
+    </div>
+  </header>
